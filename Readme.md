@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[HomeController.cs](./CS/E4714/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/E4714/Controllers/HomeController.vb))**
+* [Category.cs](./CS/E4714/Models/Category.cs) (VB: [Category.vb](./VB/E4714/Models/Category.vb))
+* [DataHelper.cs](./CS/E4714/Models/DataHelper.cs) (VB: [DataHelper.vb](./VB/E4714/Models/DataHelper.vb))
+* [_DocumentViewerPartial.cshtml](./CS/E4714/Views/Home/_DocumentViewerPartial.cshtml)
+* [Index.cshtml](./CS/E4714/Views/Home/Index.cshtml)
+<!-- default file list end -->
 # How to dynamically generate a report in an ASP.NET MVC application
 
 
