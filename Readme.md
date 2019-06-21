@@ -8,6 +8,9 @@
 * [Index.cshtml](./CS/E4714/Views/Home/Index.cshtml)
 <!-- default file list end -->
 # How to dynamically generate a report in an ASP.NET MVC application
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e4714)**
+<!-- run online end -->
 
 
 <p>This example illustrates how to create a report in code in an ASP.NET MVC application.<br><br></p>
