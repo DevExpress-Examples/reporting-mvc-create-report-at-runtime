@@ -9,9 +9,6 @@
 
 # How to dynamically generate a report in an ASP.NET MVC application
 
-**[[Run Online]](https://codecentral.devexpress.com/e4714/)**
-
-
 This example illustrates how to create a DevExpress Report in code and preview it on a web page in an ASP.NET MVC application.
 
 ## Create a report at runtime
