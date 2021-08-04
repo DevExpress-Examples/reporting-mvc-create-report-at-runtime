@@ -1,11 +1,11 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [HomeController.cs](../CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))**
+* [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))**
 * [Category.cs](./CS/Models/Category.cs) (VB: [Category.vb](./VB/Models/Category.vb))
 * [DataHelper.cs](./CS/Models/DataHelper.cs) (VB: [DataHelper.vb](./VB/Models/DataHelper.vb))
 * [Index.cshtml](./CS/Views/Home/Index.cshtml)
-* [CustomReportProvider.cs](./CS/Services/CustomReportProvider.cs) (VB: [DataHelper.vb](./VB/Services/CustomReportProvider.vb))
+* [ReportProvider.cs](./CS/Services/ReportProvider.cs) (VB: [ReportProvider.vb](./VB/Services/ReportProvider.vb))
 
 # How to dynamically generate a report in an ASP.NET MVC application
 
