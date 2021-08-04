@@ -4,23 +4,22 @@
 * **[HomeController.cs](./CS/E4714/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/E4714/Controllers/HomeController.vb))**
 * [Category.cs](./CS/E4714/Models/Category.cs) (VB: [Category.vb](./VB/E4714/Models/Category.vb))
 * [DataHelper.cs](./CS/E4714/Models/DataHelper.cs) (VB: [DataHelper.vb](./VB/E4714/Models/DataHelper.vb))
-* [_DocumentViewerPartial.cshtml](./CS/E4714/Views/Home/_DocumentViewerPartial.cshtml)
 * [Index.cshtml](./CS/E4714/Views/Home/Index.cshtml)
-<!-- default file list end -->
+* [CustomReportProvider.cs](./CS/E4714/Services/CustomReportProvider.cs) (VB: [DataHelper.vb](./VB/E4714/Services/CustomReportProvider.vb))
+
 # How to dynamically generate a report in an ASP.NET MVC application
-<!-- run online -->
+
 **[[Run Online]](https://codecentral.devexpress.com/e4714/)**
-<!-- run online end -->
 
 
-<p>This example illustrates how to create a report in code in an ASP.NET MVC application.<br><br></p>
-<p>The following steps are essential to create a report layout:</p>
-<p>1. Create a report instance and <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument15034">bind it to data</a>.</p>
-<p>2. Add required <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument2590">bands</a> to the report.</p>
-<p>3. Add required <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument2605">controls</a> to the created bands and provide data to them.</p>
-<p>After the report layout is complete, you can generate the report document and display it in a <a href="https://documentation.devexpress.com/#AspNet/CustomDocument10007">Print Preview</a>.</p>
-<p><br><strong>See also</strong>:<br><a href="https://www.devexpress.com/Support/Center/p/E3248">How to use XtraReports in an ASP.NET MVC application</a><br><a href="https://www.devexpress.com/Support/Center/p/T144065">How to link the Document Viewer with an external Ribbon control</a></p>
+This example illustrates how to create a DevExpress Report in code and preview it on a web page in an ASP.NET MVC application.
 
-<br/>
+## Create a report at runtime
+To create a report at runtime, create a report instance and add <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument2590">report bands</a> and <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument2605"> report controls</a>. Specify [expression bindings](https://docs.devexpress.com/XtraReports/1180/detailed-guide-to-devexpress-reporting/use-report-controls/bind-report-controls-to-data/specify-a-control-s-binding-expression) for report controls. [Bind the report to data](https://docs.devexpress.com/XtraReports/15034/detailed-guide-to-devexpress-reporting/bind-reports-to-data).
 
+## Preview a report of a web page
+Use the [Web Document Viewer]() to preview a report on a web page. In this example, the viewer uses [IReportProvider](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Services.IReportProvider) to load a report by its name. The name of a report is passed to the [Bind](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.WebDocumentViewerExtension.Bind.overloads) method of [WebDocumentViewerExtension](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.WebDocumentViewerExtension). You can also bind the viewer to a report instance, a model, or the report associated with the specified CachedReportSourceWeb object. For more information, see [WebDocumentViewerExtension.Bind method overloads](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.WebDocumentViewerExtension.Bind.overloads).  
+
+## See also
+* [ASP.NET MVC Reporting](https://docs.devexpress.com/XtraReports/400247/web-reporting/asp-net-mvc-reporting?p=netframework)
 
