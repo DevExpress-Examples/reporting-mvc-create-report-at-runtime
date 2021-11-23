@@ -13,7 +13,7 @@
 <!-- default file list end -->
 # How to dynamically generate a report in an ASP.NET MVC application
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4714/)**
+**[[Run Online]](https://codecentral.devexpress.com/128596431/)**
 <!-- run online end -->
 
 
