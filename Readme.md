@@ -1,30 +1,31 @@
-<!-- default badges list -->
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4714)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
+# How to Generate a Report at Runtime in an ASP.NET MVC Application
+
+This example demonstrates how to generate a report at runtime and preview it in the Document Viewer or edit it in the Report Designer. 
+
+![App Screenshot](Images/screenshot.png)
+
+In this example the Document Viewer and Report Designer components use a custom service to get a report instance by name. The custom service (CustomReportProvider) implements the [IReportProvider](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Services.IReportProvide) interface, and its [GetReport](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Services.IReportProvider.GetReport(System.String-DevExpress.XtraReports.Services.ReportProviderContext)) method generates a report instance at runtime.
+
+On the Document Viewer page, the report name is passed to the [Bind](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.WebDocumentViewerExtension.Bind.overloads) method of [WebDocumentViewerExtension](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.WebDocumentViewerExtension).
+
+On the Report Designer page, the report name is passed to the [Bind](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.ReportDesignerExtension.Bind.overloads) method. To save reports, the Report Designer calls the CustomReportStorageWebExtension service that is the [ReportStorageWebExtension](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.Extensions.ReportStorageWebExtension) class descendant.
+ 
+
 <!-- default file list -->
-*Files to look at*:
 
-* **[HomeController.cs](./CS/E4714/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/E4714/Controllers/HomeController.vb))**
-* [Category.cs](./CS/E4714/Models/Category.cs) (VB: [Category.vb](./VB/E4714/Models/Category.vb))
-* [DataHelper.cs](./CS/E4714/Models/DataHelper.cs) (VB: [DataHelper.vb](./VB/E4714/Models/DataHelper.vb))
-* [_DocumentViewerPartial.cshtml](./CS/E4714/Views/Home/_DocumentViewerPartial.cshtml)
-* [Index.cshtml](./CS/E4714/Views/Home/Index.cshtml)
+## Files to Look At
+
+- [CustomReportProvider.cs](CS/ReportAtRuntimeMvcApp/Services/CustomReportProvider.cs) ([CustomReportProvider.vb](VB/ReportAtRuntimeMvcApp/ReportAtRuntimeMvcApp/Services/CustomReportProvider.vb))
+- [Global.asax.cs](CS/ReportAtRuntimeMvcApp/Global.asax.cs) ([Global.asax.vb](VB/ReportAtRuntimeMvcApp/ReportAtRuntimeMvcApp/Global.asax.vb))
+
 <!-- default file list end -->
-# How to dynamically generate a report in an ASP.NET MVC application
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128596431/)**
-<!-- run online end -->
 
+## Documentation
 
-<p>This example illustrates how to create a report in code in an ASP.NET MVC application.<br><br></p>
-<p>The following steps are essential to create a report layout:</p>
-<p>1. Create a report instance and <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument15034">bind it to data</a>.</p>
-<p>2. Add required <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument2590">bands</a> to the report.</p>
-<p>3. Add required <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument2605">controls</a> to the created bands and provide data to them.</p>
-<p>After the report layout is complete, you can generate the report document and display it in a <a href="https://documentation.devexpress.com/#AspNet/CustomDocument10007">Print Preview</a>.</p>
-<p><br><strong>See also</strong>:<br><a href="https://www.devexpress.com/Support/Center/p/E3248">How to use XtraReports in an ASP.NET MVC application</a><br><a href="https://www.devexpress.com/Support/Center/p/T144065">How to link the Document Viewer with an external Ribbon control</a></p>
+- [Create Reports in Code](https://docs.devexpress.com/XtraReports/115726/detailed-guide-to-devexpress-reporting/reporting-api/create-reports-in-code)
+- [Bind a Report to a Microsoft SQL Server Database at Runtime](https://docs.devexpress.com/XtraReports/4793/detailed-guide-to-devexpress-reporting/bind-reports-to-data/sql-database/bind-a-report-to-a-microsoft-sql-server-database-runtime-sample)
+- [ASP.NET MVC Reporting](https://docs.devexpress.com/XtraReports/400247/web-reporting/asp-net-mvc-reporting)
 
-<br/>
+## More Examples
 
-
+- [How to programmatically generate ObjectDataSource and map object data source constructor parameters to report parameters](https://github.com/DevExpress-Examples/Reporting_how-to-programmatically-generate-objectdatasource-and-map-object-data-source-t415910)
