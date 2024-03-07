@@ -3,27 +3,22 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4714)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# How to Generate a Report at Runtime in an ASP.NET MVC Application
+# Reporting for ASP.NET MVC - How to Generate a Report at Runtime
 
-This example demonstrates how to generate a report at runtime and preview it in the Document Viewer or edit it in the Report Designer. 
+This example generates a report at runtime and previews it in the Document Viewer or edits it in the Report Designer. 
 
 ![App Screenshot](Images/screenshot.png)
 
-In this example the Document Viewer and Report Designer components use a custom service to get a report instance by name. The custom service (CustomReportProvider) implements the [IReportProvider](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Services.IReportProvide) interface, and its [GetReport](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Services.IReportProvider.GetReport(System.String-DevExpress.XtraReports.Services.ReportProviderContext)) method generates a report instance at runtime.
+In this example, the Document Viewer and Report Designer components use a custom service to get a report instance by name. The custom service (CustomReportProvider) implements the [IReportProvider](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Services.IReportProvide) interface, and its [GetReport](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Services.IReportProvider.GetReport(System.String-DevExpress.XtraReports.Services.ReportProviderContext)) method generates a report instance at runtime.
 
 On the Document Viewer page, the report name is passed to the [Bind](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.WebDocumentViewerExtension.Bind.overloads) method of [WebDocumentViewerExtension](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.WebDocumentViewerExtension).
 
 On the Report Designer page, the report name is passed to the [Bind](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.ReportDesignerExtension.Bind.overloads) method. To save reports, the Report Designer calls the CustomReportStorageWebExtension service that is the [ReportStorageWebExtension](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.Extensions.ReportStorageWebExtension) class descendant.
  
-
-<!-- default file list -->
-
-## Files to Look At
+## Files to Review
 
 - [CustomReportProvider.cs](CS/ReportAtRuntimeMvcApp/Services/CustomReportProvider.cs) ([CustomReportProvider.vb](VB/ReportAtRuntimeMvcApp/ReportAtRuntimeMvcApp/Services/CustomReportProvider.vb))
 - [Global.asax.cs](CS/ReportAtRuntimeMvcApp/Global.asax.cs) ([Global.asax.vb](VB/ReportAtRuntimeMvcApp/ReportAtRuntimeMvcApp/Global.asax.vb))
-
-<!-- default file list end -->
 
 ## Documentation
 
