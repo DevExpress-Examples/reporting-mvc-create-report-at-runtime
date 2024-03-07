@@ -7,8 +7,6 @@
 *Files to look at*:
 
 * [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
-* [Category.cs](./CS/Models/Category.cs) (VB: [Category.vb](./VB/Models/Category.vb))
-* [DataHelper.cs](./CS/Models/DataHelper.cs) (VB: [DataHelper.vb](./VB/Models/DataHelper.vb))
 * [Index.cshtml](./CS/Views/Home/Index.cshtml)
 * [ReportProvider.cs](./CS/Services/ReportProvider.cs) (VB: [ReportProvider.vb](./VB/Services/ReportProvider.vb))
 
